@@ -59,7 +59,11 @@
                 });
 
                 const result = await response.json();
-                alert('Invoice generated! PDF URL: ' + result.pdf_url);
+                alert(
+  'Invoice generated!\nBusiness A PDF: ' + result.pdf_business_a +
+  '\nBusiness B PDF: ' + result.pdf_business_b
+);
+
             } catch (error) {
                 alert('Error: ' + error.message);
             }
